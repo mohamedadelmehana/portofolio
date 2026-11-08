@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<meta name="description" content="Mohamed Adel Mehana — Junior Full Stack Web Developer building practical web applications and software systems.">
+<title>Mohamed Adel Mehana | Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06101d;--panel:#0d1b2b;--panel2:#112238;--line:#1d344b;--text:#f3f7fb;--muted:#a6b7ca;--mint:#20e0ae;--cyan:#00b9e8;--blue:#4088ff;--max:1420px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.55;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 72% 22%,#003c4d70,transparent 35%),radial-gradient(ellipse at 4% 72%,#082c5070,transparent 32%),linear-gradient(120deg,#07111f,#050c17 65%,#071525)}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 70px));margin:auto}
+header{height:78px;border-bottom:1px solid #1c3045;background:#06101de8;backdrop-filter:blur(18px);position:sticky;top:0;z-index:10}
+nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:13px}.brand-mark{width:44px;height:44px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,#08bde7,#20e0ae);color:#06101d;font:800 20px "Space Grotesk";clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.brand-name{font:700 17px "Space Grotesk";line-height:1.2}.brand-name span{color:var(--mint)}.brand-role{font-size:11px;color:#a9bbce}
+.links{display:flex;gap:clamp(16px,3vw,44px);font-size:13px;color:#d0dbe7}.links a{transition:color .2s}.links a:hover{color:var(--mint)}
+.hire{border:1px solid var(--mint);border-radius:30px;padding:10px 22px;color:#eafdf8;font-size:12px;font-weight:700;box-shadow:0 0 24px #20e0ae13;transition:.25s}.hire:hover{background:var(--mint);color:#06101d;transform:translateY(-2px)}
+.hero{min-height:550px;display:grid;grid-template-columns:1.08fr .92fr;gap:25px;align-items:center;padding:45px 0 28px;position:relative}
+.hero-copy{position:relative;z-index:2;padding:15px 0 5px}
+.hello{display:inline-flex;align-items:center;gap:8px;background:#17263a;border:1px solid #29415a;border-radius:30px;padding:7px 14px;font-size:13px;margin-bottom:15px}
+h1{font:700 clamp(42px,5.1vw,72px)/1.04 "Space Grotesk";letter-spacing:-3.5px;margin:0 0 5px;white-space:nowrap}
+h1 .name-accent{color:var(--mint)}.role{font:500 clamp(25px,3.1vw,43px)/1.2 "Space Grotesk";letter-spacing:-1.7px;margin:0 0 20px}.role span{color:var(--mint)}
+.intro{max-width:570px;border-left:5px solid var(--mint);padding-left:19px;color:#c0cddd;font-size:16px;line-height:1.58;margin:0 0 27px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:30px;font-size:13px;font-weight:700;transition:.25s}.btn.primary{background:linear-gradient(100deg,#20e0ae,#00c6d9);color:#04121a;box-shadow:0 8px 25px #00d6b42b}.btn.secondary{border:1px solid #4772b4;color:#eef5ff}.btn:hover{transform:translateY(-3px);filter:brightness(1.08)}
+.social{display:flex;align-items:center;gap:17px;margin-top:21px;color:#d1dcea;font-size:12px}.social a{display:inline-flex;align-items:center;gap:6px}.social a:hover{color:var(--mint)}.social .ico{font-size:19px;font-weight:800;color:#70a6ff}.mail-icon{font-size:20px;color:#dce8f5}
+.hero-stats{display:flex;gap:27px;align-items:center;margin-top:24px}.stat{display:flex;align-items:center;gap:11px}.stat-icon{font-size:25px}.stat b{font:700 22px "Space Grotesk";display:block;line-height:1.1}.stat small{font-size:10px;color:#aebdd0}.stat-sep{width:1px;height:35px;background:#1b8e8b}
+.visual{height:515px;position:relative;display:flex;align-items:flex-end;justify-content:center;isolation:isolate}
+.visual:before{content:"";position:absolute;width:350px;height:440px;top:22px;left:50%;transform:translateX(-50%) skew(-13deg);border-radius:36px;background:linear-gradient(150deg,#08c8b966,#0578b344 60%,transparent);filter:blur(.2px);z-index:-2}
+.visual:after{content:"";position:absolute;width:440px;height:180px;bottom:8px;left:50%;transform:translateX(-50%) rotate(-8deg);border:5px solid transparent;border-top-color:#08d8c9;border-bottom-color:#087eff;border-radius:50%;filter:drop-shadow(0 0 13px #00d7ce);z-index:2;pointer-events:none}
+.portrait{height:100%;max-height:515px;width:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 0 26px #00e1cf25);animation:float 6s ease-in-out infinite;position:relative;z-index:1}
+.tech-panel{position:absolute;right:-2px;top:72px;width:205px;padding:14px;border:1px solid #145477;border-radius:17px;background:#0a1a2ce8;box-shadow:0 12px 35px #00111f80;z-index:3}
+.tech-title{font:700 13px "Space Grotesk";margin:0 0 12px;display:flex;align-items:center;gap:8px}.tech-title:before{content:"▰";color:var(--mint);font-size:18px}
+.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.tech{border:1px solid #1c354e;background:#10243a;border-radius:10px;min-height:66px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:10px;color:#e5edf6}.tech b{font:700 19px "Space Grotesk";color:var(--mint)}.tech:nth-child(3n+2) b{color:#80aaff}.tech:nth-child(3n) b{color:#ff746e}
+section{padding:62px 0;border-top:1px solid #1a3045;scroll-margin-top:78px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}.eyebrow{display:inline-block;background:#15283b;border-radius:20px;padding:4px 12px;color:#dce8f4;font-size:11px;font-weight:700}.eyebrow:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mint);margin-right:7px}
+h2{font:700 clamp(29px,3.3vw,42px)/1.15 "Space Grotesk";letter-spacing:-1.7px;margin:8px 0 3px}h2 span{color:var(--mint)}.section-desc{margin:0;color:var(--muted);font-size:13px}.view-all{border:1px solid var(--mint);border-radius:25px;padding:10px 17px;font-size:11px;font-weight:700;white-space:nowrap}.view-all:hover{background:var(--mint);color:#06101d}
+.project-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.project-card{border:1px solid #1d3b55;background:#0c1b2c;border-radius:16px;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s;min-width:0}.project-card:hover{transform:translateY(-7px);border-color:#1ed8bd;box-shadow:0 16px 38px #00bfa91a}
+.project-image{height:178px;overflow:hidden;background:linear-gradient(135deg,#132d44,#0b1827);position:relative}.project-image img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s}.project-card:hover .project-image img{transform:scale(1.05)}
+.project-placeholder{height:100%;display:grid;place-items:center;background:radial-gradient(circle at 50% 30%,#1c4362,#0a1728 70%);font:700 42px "Space Grotesk";color:#3dd9c1;text-shadow:0 0 25px #20e0ae50}.project-body{padding:14px 15px 16px}.project-top{display:flex;align-items:center;gap:9px}.project-icon{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:linear-gradient(135deg,#20e0ae,#0587a4);color:#04131a;font-size:16px}.project-card h3{font:700 15px "Space Grotesk";margin:0}.project-card p{font-size:11px;color:#a9bbce;margin:6px 0 10px;min-height:34px}.project-foot{display:flex;justify-content:space-between;align-items:center;color:#9db1c5;font-size:10px}.arrow{width:28px;height:28px;border-radius:50%;border:1px solid #51647c;display:grid;place-items:center;color:#fff;font-size:15px}
+.project-detail{margin-top:20px;border:1px solid var(--line);border-radius:14px;background:#0b1929;padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:25px}.project-detail h3{font:700 18px "Space Grotesk";margin:0 0 8px}.project-detail p{font-size:12px;color:var(--muted);margin:0}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.tag{font-size:10px;padding:5px 9px;border-radius:15px;background:#12283c;border:1px solid #24425d;color:#cbd9e7}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px}.about-grid p{color:var(--muted);font-size:14px}.skill-groups{display:grid;grid-template-columns:1fr 1fr;gap:10px}.skill-group{padding:15px;border:1px solid var(--line);border-radius:11px;background:#0c1b2c}.skill-group b{font:700 13px "Space Grotesk";display:block;margin-bottom:5px}.skill-group span{font-size:11px;color:var(--muted)}
+.awards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.award{padding:18px;border:1px solid var(--line);border-radius:12px;background:#0d1c2d}.award strong{display:block;font:700 13px "Space Grotesk";margin:8px 0 4px}.award p{font-size:11px;color:var(--muted);margin:0}.award .medal{font-size:23px}
+.contact-box{padding:30px;border:1px solid #146b64;border-radius:18px;background:linear-gradient(110deg,#0c302f,#0d1c2d 70%);display:flex;align-items:center;justify-content:space-between;gap:20px}.contact-box p{color:#b4c8d4;font-size:13px}.contact-box h2{margin:0}
+footer{padding:22px 0;color:#8397aa;font-size:11px;display:flex;justify-content:space-between;gap:15px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:none}
+.project-card{will-change:transform}.project-card:focus-within,.project-card:focus{outline:2px solid var(--mint);outline-offset:3px;cursor:pointer}
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--mint),var(--cyan));z-index:30;box-shadow:0 0 12px #20e0ae80}
+.menu-toggle{display:none;border:1px solid #34516c;border-radius:10px;background:#0d1b2b;color:#eaf5ff;width:42px;height:40px;font-size:21px;cursor:pointer}
+.mobile-menu{display:none}
+.to-top{position:fixed;right:22px;bottom:22px;z-index:15;width:44px;height:44px;border-radius:50%;border:1px solid #20e0ae88;background:#0d2533;color:var(--mint);font-size:20px;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(10px);transition:.25s;box-shadow:0 8px 25px #0007}
+.to-top.show{opacity:1;pointer-events:auto;transform:none}.to-top:hover{background:var(--mint);color:#06101d}
+@media(max-width:800px){.menu-toggle{display:grid;place-items:center}.links{display:none}.mobile-menu{position:absolute;display:flex;flex-direction:column;gap:0;top:68px;left:14px;right:14px;padding:8px;border:1px solid #29445d;border-radius:14px;background:#091827f5;backdrop-filter:blur(16px);box-shadow:0 18px 40px #0009;opacity:0;visibility:hidden;transform:translateY(-8px);transition:.2s}.mobile-menu.open{opacity:1;visibility:visible;transform:none}.mobile-menu a{padding:12px 14px;border-radius:8px;color:#dce8f4;font-size:13px}.mobile-menu a:hover{background:#142c40;color:var(--mint)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+@media(max-width:1100px){.project-grid{grid-template-columns:repeat(2,1fr)}.tech-panel{right:-8px;width:185px}.visual{height:470px}.portrait{max-height:470px}}
+@media(max-width:800px){.wrap{width:calc(100% - 36px)}.links{gap:14px}.hero{grid-template-columns:1fr;padding:48px 0 25px}.hero-copy{order:1}.visual{order:2;height:430px;margin-top:10px}.portrait{max-height:430px}.tech-panel{right:0;top:28px}.hero-stats{margin-bottom:8px}.project-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.awards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){header{height:68px}.wrap{width:calc(100% - 28px)}.brand-mark{width:37px;height:37px}.brand-name{font-size:14px}.brand-role{font-size:9px}.links{display:none}.hire{padding:9px 14px;font-size:10px}.hero{padding-top:38px}.hello{font-size:11px}h1{font-size:clamp(34px,10vw,48px);letter-spacing:-2.2px;white-space:normal}.role{font-size:26px}.intro{font-size:14px}.visual{height:350px}.portrait{max-height:350px}.tech-panel{width:145px;padding:9px;top:16px}.tech-title{font-size:11px}.tech{min-height:52px;font-size:9px}.tech b{font-size:16px}.hero-stats{gap:12px;justify-content:space-between}.stat{gap:6px}.stat-icon{font-size:18px}.stat b{font-size:17px}.stat small{font-size:9px}.stat-sep{height:27px}.section-head{align-items:start;flex-direction:column}.project-grid{grid-template-columns:1fr}.project-image{height:190px}.project-detail{grid-template-columns:1fr}.skill-groups{grid-template-columns:1fr 1fr}.awards{grid-template-columns:1fr 1fr}.contact-box{display:block;padding:23px}.contact-box .btn{margin-top:12px}footer{display:block}footer span{display:block;margin-top:6px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<header><nav class="wrap">
+<a class="brand" href="#home"><span class="brand-mark">MM</span><span><span class="brand-name">Mohamed Adel <span>Mehana</span></span><span class="brand-role">Full Stack Web Developer</span></span></a>
+<div class="links"><a href="#home">Home</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#achievements">Achievements</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+<a class="hire" href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamed.adel.2306@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener">↗ &nbsp; Hire Me</a>
+</nav>
+<div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+<a href="#home">Home</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#achievements">Achievements</a><a href="#about">About</a><a href="#contact">Contact</a>
+</div>
+</header>
+<main>
+<div class="wrap hero" id="home">
+<div class="hero-copy reveal">
+<div class="hello">👋 Hello, I'm</div>
+<h1>Mohamed Adel <span class="name-accent">Mehana</span></h1>
+<div class="role">Junior <span>Full Stack</span> Web Developer</div>
+<p class="intro">Computer Science & AI student, passionate about building scalable web applications and innovative solutions using modern technologies.</p>
+<div class="actions"><a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamed.adel.2306@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener">✉ &nbsp; Contact Me &nbsp; ›</a><a class="btn secondary" href="https://www.linkedin.com/in/mohamed-mehana-206935371" target="_blank" rel="noopener">in &nbsp; View My LinkedIn ↗</a></div>
+<div class="social"><a href="https://www.linkedin.com/in/mohamed-mehana-206935371" target="_blank" rel="noopener"><span class="ico">in</span> LinkedIn</a><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamed.adel.2306@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener"><span class="mail-icon">✉</span> Email</a><span>│</span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamed.adel.2306@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener">mohamed.adel.2306@gmail.com</a></div>
+<div class="hero-stats"><div class="stat"><span class="stat-icon">🏆</span><span><b>4+</b><small>Achievements</small></span></div><span class="stat-sep"></span><div class="stat"><span class="stat-icon">▣</span><span><b>4+</b><small>Projects</small></span></div><span class="stat-sep"></span><div class="stat"><span class="stat-icon">‹/›</span><span><b>Full Stack</b><small>Development</small></span></div></div>
+</div>
+<div class="visual reveal">
+<img class="portrait" src="assets/mohamed-portrait-cutout.png" alt="Mohamed Adel Mehana">
+<div class="tech-panel"><div class="tech-title">Tech Stack</div><div class="tech-grid">
+<div class="tech"><b>⚛</b>React</div><div class="tech"><b>N</b>Next.js</div><div class="tech"><b>♧</b>Laravel</div>
+<div class="tech"><b>PHP</b>PHP</div><div class="tech"><b>⬡</b>Node.js</div><div class="tech"><b>JS</b>JavaScript</div>
+<div class="tech"><b>▤</b>MySQL</div><div class="tech"><b>✦</b>Supabase</div><div class="tech"><b>⌘</b>Git</div>
+</div></div>
+</div>
+</div>
+
+<section id="projects"><div class="wrap">
+<div class="section-head reveal"><div><span class="eyebrow">My Work</span><h2>Featured <span>Projects</span></h2><p class="section-desc">Real-world projects that showcase my skills and problem-solving ability.</p></div><a class="view-all" href="#project-details">View Project Details &nbsp; →</a></div>
+<div class="project-grid">
+<article class="project-card reveal"><div class="project-image"><img src="assets/tools-house-dashboard.png" alt="Tools House shop management dashboard"></div><div class="project-body"><div class="project-top"><span class="project-icon">▧</span><h3>Tools House</h3></div><p>Shop management system for sales, inventory, customers and suppliers.</p><div class="project-foot"><span>React · Supabase</span><a class="arrow" href="#project-details">→</a></div></div></article>
+<article class="project-card reveal"><div class="project-image"><img src="assets/ngt-solar-website.png" alt="NGT Solar Solution website"></div><div class="project-body"><div class="project-top"><span class="project-icon">✦</span><h3>NGT Solar Solution</h3></div><p>Renewable energy platform for an automated solar panel cleaning solution.</p><div class="project-foot"><span>PHP · Tailwind CSS</span><a class="arrow" href="#project-details">→</a></div></div></article>
+<article class="project-card reveal"><div class="project-image"><div class="project-placeholder">ELITE</div></div><div class="project-body"><div class="project-top"><span class="project-icon">▣</span><h3>ELITE Shop</h3></div><p>Full-stack e-commerce website with product and store management features.</p><div class="project-foot"><span>Laravel · MySQL</span><a class="arrow" href="#project-details">→</a></div></div></article>
+<article class="project-card reveal"><div class="project-image"><div class="project-placeholder">NASAQ</div></div><div class="project-body"><div class="project-top"><span class="project-icon">◈</span><h3>Nasaq Desk</h3></div><p>Customer support and service management platform for organized workflows.</p><div class="project-foot"><span>React · Laravel</span><a class="arrow" href="#project-details">→</a></div></div></article>
+</div>
+<div class="project-detail reveal" id="project-details">
+<div><h3>Tools House — Shop Management System</h3><p>Designed to organize customers, sales, purchases, inventory, supplier accounts, expenses and daily operations. Built around practical shop workflows and a clear dashboard.</p><div class="tags"><span class="tag">React</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">Authentication</span></div></div>
+<div><h3>NGT Solar Solution — SolarClean</h3><p>Website for a solar panel cleaning solution, presenting products and services and guiding visitors toward store exploration and quote requests.</p><div class="tags"><span class="tag">PHP</span><span class="tag">Tailwind CSS</span><span class="tag">Responsive Design</span></div></div>
+<div><h3>ELITE Shop</h3><p>E-commerce web application with product browsing, reusable interface components and database-backed store administration.</p><div class="tags"><span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Tailwind CSS</span></div></div>
+<div><h3>Nasaq Desk</h3><p>Customer support and service management platform designed to organize requests, streamline operations and support role-based access.</p><div class="tags"><span class="tag">React</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">REST API</span><span class="tag">Sanctum</span></div></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap"><div class="section-head reveal"><div><span class="eyebrow">What I Use</span><h2>Technical <span>Skills</span></h2><p class="section-desc">Tools and technologies I use to design and build web applications.</p></div></div>
+<div class="skill-groups reveal">
+<div class="skill-group"><b>Frontend Development</b><span>HTML5 · CSS3 · JavaScript · React.js · Tailwind CSS · Responsive Design</span></div>
+<div class="skill-group"><b>Backend Development</b><span>Node.js · PHP · Laravel · REST APIs · Authentication</span></div>
+<div class="skill-group"><b>Databases</b><span>MySQL · PostgreSQL · Supabase · Database Design</span></div>
+<div class="skill-group"><b>Tools & Workflow</b><span>Git · GitHub · VS Code · Microsoft Office</span></div>
+</div></div></section>
+
+<section id="achievements"><div class="wrap"><div class="section-head reveal"><div><span class="eyebrow">Milestones</span><h2>Achievements & <span>Recognition</span></h2></div></div>
+<div class="awards reveal">
+<div class="award"><div class="medal">🏆</div><strong>Ebhār Masr</strong><p>Top 5 nationally in the Technology Track; among the top 20 youth in Egypt.</p></div>
+<div class="award"><div class="medal">🥉</div><strong>ISEF — 3rd Place</strong><p>Republic-level recognition in Environmental Engineering for an automatic solar panel cleaning system.</p></div>
+<div class="award"><div class="medal">⭐</div><strong>ISF Competition</strong><p>Finalist among the top 100 teams in Egypt and awarded EGP 10,000.</p></div>
+<div class="award"><div class="medal">🎖️</div><strong>WE Shine</strong><p>Success Story Recognition for achievements during three years at WE Applied Technology School.</p></div>
+</div></div></section>
+
+<section id="about"><div class="wrap"><div class="section-head reveal"><div><span class="eyebrow">A Little About Me</span><h2>Building, learning, <span>improving.</span></h2></div></div>
+<div class="about-grid reveal"><div><p>I'm Mohamed Adel Mehana, a Computer Science and Artificial Intelligence student at Elsadat University, with a technical background in Programming and Web Development from WE Applied Technology School.</p><p>I enjoy turning real business needs into practical software — understanding the workflow, designing the interface, connecting the backend, and improving the product through hands-on work.</p></div><div class="skill-groups reveal"><div class="skill-group"><b>Education</b><span>Elsadat University<br>B.Sc. Computer Science & AI<br>2026–2030</span></div><div class="skill-group"><b>Focus</b><span>Full Stack Web Development<br>Business Software Systems<br>Practical applications</span></div></div></div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact-box reveal"><div><span class="eyebrow">Let's Connect</span><h2>Have a project in mind?</h2><p>I'm open to junior developer opportunities, internships, freelance projects and collaborations.</p></div><a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamed.adel.2306@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener">✉ &nbsp; Email Me</a></div></div></section>
+</main>
+<footer class="wrap"><span>© 2026 Mohamed Adel Mehana</span><span>Designed to showcase real work · <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohamed.adel.2306@gmail.com&su=Portfolio%20Inquiry" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener">Get in touch ↗</a></span></footer>
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+<script>
+(() => {
+ const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const revealItems=document.querySelectorAll('.reveal');
+ if('IntersectionObserver' in window && !reduceMotion){
+  const io=new IntersectionObserver((entries,obs)=>entries.forEach((e,i)=>{if(e.isIntersecting){e.target.style.transitionDelay=`${(i%4)*70}ms`;e.target.classList.add('visible');obs.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -35px 0px'});
+  revealItems.forEach(el=>io.observe(el));
+ }else revealItems.forEach(el=>el.classList.add('visible'));
+
+ const toggle=document.getElementById('menuToggle'),menu=document.getElementById('mobileMenu');
+ const setMenu=open=>{if(!toggle||!menu)return;menu.classList.toggle('open',open);toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');toggle.textContent=open?'×':'☰'};
+ toggle?.addEventListener('click',()=>setMenu(toggle.getAttribute('aria-expanded')!=='true'));
+ menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+ document.addEventListener('click',e=>{if(menu?.classList.contains('open')&&!menu.contains(e.target)&&!toggle?.contains(e.target))setMenu(false)});
+
+ const progress=document.getElementById('scrollProgress'),topBtn=document.getElementById('toTop');
+ const update=()=>{const max=document.documentElement.scrollHeight-innerHeight; if(progress)progress.style.width=`${max>0?scrollY/max*100:0}%`;topBtn?.classList.toggle('show',scrollY>450)};
+ addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();
+ topBtn?.addEventListener('click',()=>scrollTo({top:0,behavior:reduceMotion?'auto':'smooth'}));
+
+ const navLinks=document.querySelectorAll('.links a');
+ if('IntersectionObserver' in window){const so=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)navLinks.forEach(a=>{const active=a.hash===`#${e.target.id}`;a.style.color=active?'var(--mint)':'';a.setAttribute('aria-current',active?'location':'false')})}),{rootMargin:'-25% 0px -60% 0px'});document.querySelectorAll('main section[id]').forEach(s=>so.observe(s))}
+
+ document.querySelectorAll('.project-card').forEach(card=>{
+  card.tabIndex=0;card.setAttribute('role','link');card.setAttribute('aria-label',`${card.querySelector('h3')?.textContent||'Project'} details`);
+  const go=()=>document.getElementById('project-details')?.scrollIntoView({behavior:reduceMotion?'auto':'smooth'});
+  card.addEventListener('click',e=>{if(!e.target.closest('a'))go()});
+  card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}});
+ });
+})();
+</script>
+</body></html>
